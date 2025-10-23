@@ -194,7 +194,7 @@ cout<<(a==b)<<endl;     //需要加括号
      - **注意2**：case里如果没有break，那么程序会一直向下执行    
   **与if语句相比，对于多条件判断时，switch的结构清晰，缺点是switch不可以判断区间** 
   ##### 2、循环结构 
-  - while     
+  - ***while***     
     语法：while（循环条件）{ 循环语句}   
     ```c++
     while(num<10)
@@ -217,6 +217,19 @@ cout<<(a==b)<<endl;     //需要加括号
       return 0;
     }
     ```
+  - ***dowhile***    
+  语法：do（循环语句）while（循环条件）；     
+     - 与while相比；**do...while会先执行一次循环语句**，再判断循环条件
+     ```c++
+    do
+    {
+      cout<<num<<endl;
+      num++;
+    }
+    while(num<10);
+    
+      
+
 
 
 
