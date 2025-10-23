@@ -275,6 +275,22 @@ cout<<(a==b)<<endl;     //需要加括号
     - 数组名是常量，不可以赋值
 
 
+  - ***元素逆置***
+  ```c++
+  int start=0;
+  int end=sizeof(arr)/sizeof(arr[0])-1;
+
+  while(start<end)
+  {
+    int temp=arr[start];
+    arr[start]=arr[end];
+    arr[end]=temp;
+
+    start++;
+    end--;
+  }  
+  ```
+
 
 
     

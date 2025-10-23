@@ -1,11 +1,11 @@
 #include<iostream>
 using namespace std;
 
-int mian()
+int main()
 {
     int arr[5]={300,350,200,400,250};
-    int max=arr[0];
-    for(int i=1;i<5;i++)
+    int max=0;
+    for(int i=0;i<5;i++)
     {
         if(max<arr[i])
         {
