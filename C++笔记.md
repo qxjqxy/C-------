@@ -491,14 +491,85 @@ int main()
 
  int main()
  {
-  struct student stuArry[3]=
+  struct student stuArray[3]=
   {
     {"张三",18,100},
     {"李四",19,98},
     {"王五",19,89}
   }
+
+  stuArray[2].name="赵六"；
+
+//遍历结构体数组
+for(int i=0;i<3;i++)
+{
+  cout<<"姓名"<<stuArray[1].name
+      <<"年龄"<<stuArray[1].age
+      <<"分数"<<stuArray[1].score<<endl;
+}
  }
+  ```    
+
+###### 结构体指针
+   作用：通过指针访问结构体中的成员
+   - 利用操作符->可以通过结构体访问结构体属性
+```c++
+struct student  
+ {
+      string name;
+      int age;
+      int score;
+ }
+ int main()
+ {
+  struct student s={"张三",18,100};
+
+  //通过指针指向结构体变量
+  struct student*p=&S；   //不能用int，struct可以省略
+  //通过指针访问结构体变量中的数据
+  cout<<"姓名："<<p->name<<endl;
+
+ }
+ ```
+
+ ###### 结构体嵌套结构体
+ 作用：结构体值的成员可以是另一个结构体
+ ```c++
+ struct student
+ {
+
+
+
+ }
+ struct teacher
+ {
+  int id;
+  string name;
+  struct student stu; 
+ }
+ \
+ int main()
+ {
+  teacher t;
+  t.name=;
+  t.stu.name=;
+ }
+ ```
+ ###### 结构体作函数参数
+ 作用：将结构体作为参数向函数中传递               
+ 传递方式：1.值传递    2.地址传递
+
+ ###### 结构体中const使用场景
+ 作用：用const来防止误操作
+ ```c++
+ void printstudents(const student*s)   //将函数中的形参改为指针，可以减少内存，而且不会复制新的副本
+ {//加入const之后，一旦有修改的操作就会报错，可防止误操作
+
+ }
+ ```
+
       
+
     
 
     
