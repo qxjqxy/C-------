@@ -18,9 +18,9 @@ class stu
 int main()
 {
     stu s1;
-    cin>>s1.student;
-    cin>>s1.number;
-    void stu();
+    s1.student="张三";
+    s1.number=12345678;
+    void stunum();
     system("pause");
     return 0;
 }
