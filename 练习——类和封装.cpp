@@ -5,19 +5,22 @@ using namespace std;
 class stu
 {
     public:
-    char student;
+    string student;
     int  number;
+
     void stunum()
     {
-        cin>>student;
-        cin>>number;
+        cout<<"姓名："<<student<<endl;
+        cout<<"学号："<<number<<endl;
+        
     }
 };
 int main()
 {
     stu s1;
-    cout<<"姓名："<<s1.student<<endl;
-    cout<<"学号："<<s1.number<<endl;
+    cin>>s1.student;
+    cin>>s1.number;
+    void stu();
     system("pause");
     return 0;
 }
