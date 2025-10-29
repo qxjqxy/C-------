@@ -20,7 +20,7 @@ int main()
     stu s1;
     s1.student="张三";
     s1.number=12345678;
-    void stunum();
+    s1.stunum();
     system("pause");
     return 0;
 }
