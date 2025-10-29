@@ -14,11 +14,19 @@ class stu
         cout<<"学号："<<number<<endl;
         
     }
+
+    //通过行为给属性赋值   
+    void showstudent(string studentname)
+    {
+        student=studentname;
+
+    }
+
 };
 int main()
 {
     stu s1;
-    s1.student="张三";
+    s1.student="张三";//方法2可为：  s1.showstudent("张三")；
     s1.number=12345678;
     s1.stunum();
     system("pause");
